@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="0.5dp"
+
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:16"
+            android:textColor="#333"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_ampm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="上午"
+            android:textColor="#666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#b4b4b4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_days"
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:text="周一至周五"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_to_alarm"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:text="距响铃12小时16分钟"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <com.yzl.clock.widget.Switch
+        android:id="@+id/sw_isOpen"
+        android:layout_marginLeft="10dp"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        app:sw_checked="true"
+        app:sw_selectColor="#009900"
+        />
+
+
+</LinearLayout>

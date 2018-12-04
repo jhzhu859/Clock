@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Switch">
+        <attr name="sw_selectColor" format="color"></attr>
+        <attr name="sw_unSelectColor" format="color"></attr>
+        <attr name="sw_style" format="integer">
+            <enum name="sw_fill" value="2" />
+            <enum name="sw_stroke" value="1" />
+        </attr>
+        <attr name="sw_checked" format="boolean"></attr>
+        <attr name="sw_corner_ratio" format="float"></attr>
+        <attr name="sw_text" format="string"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="CheckBox">
+        <attr name="cb_selectColor" format="color"></attr>
+        <attr name="cb_unSelectColor" format="color"></attr>
+        <attr name="cb_corner_ratio" format="float"></attr>
+        <attr name="cb_checked" format="boolean"></attr>
+        <attr name="cb_text" format="string"></attr>
+        <attr name="cb_text_color" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="Button">
+        <attr name="btn_text" format="string"></attr>
+    </declare-styleable>
+
+</resources>
